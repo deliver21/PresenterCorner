@@ -1,0 +1,11 @@
+﻿@model User
+<form method="post" asp-action="CreateUser" class="form-inline" id="createUserForm">
+    <span asp-validation-for="Nickname" class="text-danger text-center"></span>
+    <div class="form-group mb-2">
+        <div class="col-lg-4 col-md-7 mb-1 d-inline-flex form-floating text-center">
+            <input asp-for="Nickname" type="text" id="nickname" class="form-control" placeholder="Enter your nickname" required>
+            <label asp-for="Nickname" class="ms-2">Your nickname</label>
+        </div>              
+        <button type="submit" class="btn btn-primary mb-1">Start</button>
+    </div>
+</form>

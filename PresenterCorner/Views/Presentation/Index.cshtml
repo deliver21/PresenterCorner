@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Presentations hub";
+}
+
+<div class="container">
+    <h1>Collaborative Presentations</h1>
+
+    <!-- Create Presentation -->
+    <div class="mb-4">
+        <h4>Create New Presentation</h4>
+        <form id="createPresentationForm">
+            <div class="input-group">
+                <input type="text" id="presentationTitle" class="form-control" placeholder="Presentation Title" required>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Presentation List -->
+    <div>
+        <h4>Existing Presentations</h4>
+        <ul id="presentationsList" class="list-group">
+            <!-- Populated dynamically -->
+        </ul>
+    </div>
+</div>
+
+<!-- Modal for Nickname -->
+<div id="nicknameModal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Enter Nickname</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="nickname" class="form-control" placeholder="Your Nickname" required>
+            </div>
+            <div class="modal-footer">
+                <button id="joinBtn" class="btn btn-primary">Join</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/presentation.js"></script>
+

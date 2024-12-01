@@ -1,0 +1,17 @@
+﻿#slides {
+    overflow-y: auto;
+    height: 90vh;
+}
+
+#editorArea {
+    height: 90vh;
+    position: relative;
+    background: #f8f9fa;
+}
+
+.text-block {
+    position: absolute;
+    cursor: move;
+    padding: 5px;
+    border: 1px dashed #ccc;
+}
